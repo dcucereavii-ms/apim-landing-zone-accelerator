@@ -1,0 +1,45 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "vmUsername": {
+            "value": "adminuser"
+        },
+        "vmPassword": {
+            "value": "Ap*}ct8BQ_"
+        },
+        "accountName": {
+            "value": "none"
+        },
+        "personalAccessToken": {
+            "value": "none"
+        },
+        "workloadName" :{ 
+            "value": "demoWL"
+        },
+        "CICDAgentType": {
+            "value": "none"
+        },
+        "environment" :{ 
+            "value": "dev"
+        },
+        "appGatewayFqdn" :{ 
+            "value": "testdc"
+        },
+        "appGatewayCertType" :{
+            "value": "selfsigned"
+        },
+        "existingKvNam":{ 
+            "value": "kv-apim-dc"
+        },
+        "existingKvResourceGroup":{ 
+            "value": "apim-demo"
+        },
+        "existingSecretName":{
+            "value": "apim"
+        },
+        "deployFunction" :{
+            "value": "true"
+        }
+    }
+}

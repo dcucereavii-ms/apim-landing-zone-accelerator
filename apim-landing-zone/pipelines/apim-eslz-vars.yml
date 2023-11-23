@@ -1,0 +1,40 @@
+#varibles for the APIM-ESLZ default pipeline
+# Edit the values to match your desired configuration
+
+variables:
+- name: environmentName         # Creates an Azure DevOps Environment to track deployments and set checks and contraints
+  value: APIM-ESLZ
+- name: serviceConnectionName   # Name of the serviceconnection to the target ESLZ Azure subscription
+  value: apim_lz_sp
+- name: deploymentLocation      # Azure region to deploy recources into
+  value: canadacentral
+- name: deploymentName          # Name of deployment to label ARM deployments in the Azure Portal
+  value: 'api-management-ESLZ'
+- name: artifactName            # Name of the pipeline artifact to be created and deployed
+  value: 'apim-landing-zone-accelerator'
+- name: workloadName            # Label for naming the workload in the portal as part of deployment
+  value: 'Api-Management-ESLZ'
+- name: eslzEnvironmentType     # Specifier for target environment type. Options ['dev', 'uat', 'prod', 'dr']
+  value: 'dev'
+# - name : CICDAgentType
+#   value: 'azuredevops'
+# - name: accountName
+#   value: 'https://dev.azure.com/dcucereavii'
+# - name: personalAccessToken
+#   value: 'none'
+# - name: vmPassword
+#   value: P@ssword123!
+# - name: vmUsername
+#   value: adminuser
+# - name: appGatewayCertType
+#   value: 'selfsigned'
+# - name: appGatewayFqdn
+#   value: testdc
+# - name: deployFunction
+#   value: 'true'
+# - name: existingKvName
+#   value: 'kv-apim-dc'
+# - name: existingKvResourceGroup
+#   value: 'apim-demo'
+# - name: existingSecretName
+#   value: 'apim'
